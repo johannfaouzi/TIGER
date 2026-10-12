@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{lrr}
+\toprule
+Method & Mean accuracy & Gap to six-method oracle \\
+\midrule
+Best base learner (CV-picked, hindsight) & 0.8778 & 0.0094 \\
+TIGER's adaptive rule (deployed) & 0.8838 & 0.0034 \\
+Weighted hard majority vote / TabICLv2 oracle (hindsight) & 0.8869 & 0.0003 \\
+Six-method oracle (hindsight) & 0.8872 & 0.0000 \\
+Best single base learner (test-set hindsight, no stacking) & 0.8922 & -0.0050 \\
+\bottomrule
+\end{tabular}
+\caption{Mean accuracy (per-data-set means over 30 resamples, averaged across the 142 data sets) of TIGER's deployed adaptive meta-classification rule against four hindsight references. The first is the best of its own two constituent methods (weighted hard majority vote, TabICLv2) chosen per data set after the fact. The second is the best of all six candidate meta-classification methods from Section\textasciitilde{}5.1, chosen the same way. The third is the best single base learner, chosen per data set by cross-validated out-of-fold accuracy alone (no meta-classification stage). The fourth is the best single base learner chosen by test-set hindsight instead, an unrealizable upper bound included for reference. ``Gap to six-method oracle'' is the six-method oracle's own mean accuracy minus each row's.}
+\label{tab:oracle-headroom}
+\end{table}

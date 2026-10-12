@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrrr}
+\toprule
+ & Accuracy (ECOC) & Accuracy (Native) & Seconds (ECOC) & Seconds (Native) \\
+\midrule
+('EOGHorizontalSignal', 12) & 0.8182 & 0.8138 & 886.1534 & 131.8723 \\
+('EOGVerticalSignal', 12) & 0.7619 & 0.7707 & 880.2861 & 131.1280 \\
+('FacesUCR', 14) & 0.9615 & 0.9567 & 1556.9296 & 361.2607 \\
+('GestureMidAirD3', 26) & 0.5108 & 0.5062 & 972.3688 & 150.2863 \\
+('PigAirwayPressure', 52) & 0.5260 & 0.5481 & 1248.2970 & 290.6634 \\
+('PigCVP', 52) & 0.8462 & 0.8115 & 1198.8973 & 287.2407 \\
+\bottomrule
+\end{tabular}
+\caption{TabICLv2's native many-class handling against its ECOC-wrapped variant (``many\textbackslash\{\}\_class'' backend), on the six development-subset data sets with more than ten classes, averaged over 5 resamples each. Seconds is the mean fit-and-predict wall-clock time per (data set, resample) job.}
+\label{tab:multiclass-handling}
+\end{table}

@@ -1,0 +1,37 @@
+# Core dependencies. Versions pin to what this package was developed and
+# tested against (and what sn-article.tex's Section 4.3 reports as having
+# actually been used to produce the paper's results); loosen if needed,
+# but note TabICLv2's own API (in particular TabICLClassifier's
+# constructor kwargs used in backbone.py) has changed between tabicl
+# releases before, so pin it deliberately.
+aeon==1.6.0
+scikit-learn==1.7.2
+scipy==1.17.1
+numpy==2.3.5
+
+# Used by this project's own implementations of the QUANT and KG-MTP
+# transformation steps (tsfm_ensemble/quant.py, tsfm_ensemble/kg_mtp.py).
+numba==0.63.1
+
+# TabICLv2 backbone. Requires network access to Hugging Face Hub on first
+# use (downloads a model checkpoint) and, for anything beyond toy-sized
+# inputs, a GPU. The rest of this package works and is tested without
+# this installed, via backbone="fallback" (see backbone.py).
+tabicl==2.2.0
+torch==2.14.0  # tabicl's own dependency
+
+# ECOC many-class handling's default backend (backbone.py's GroupedICLClassifier,
+# ecoc_backend="many_class"): tabpfn_extensions.many_class.ManyClassClassifier,
+# believed to be the actual "TabPFNv2 ECOC wrapper" the TabICLv2 paper's own text
+# says it supports -- see backbone.py's module docstring for the source-level
+# verification. Not needed for ecoc_backend="sklearn" or ecoc=False runs.
+tabpfn-extensions==0.6.2
+
+# Meta-model layer (tsfm_ensemble/meta_learners.py): one of the five
+# meta-classifiers stacked on top of the 12 base learners' scores.
+lightgbm==4.7.0
+
+# Used by src/analyses/ to generate the paper's tables and figures from
+# already-computed results (see README.md's "Experiments" section).
+matplotlib==3.11.2
+pandas==2.3.3

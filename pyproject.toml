@@ -1,0 +1,11 @@
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+preview = true
+extend-select = ["E", "F", "W", "I"]
+ignore = ["E402", "E741"]
+exclude = ["quant_original.py"]
+
+[tool.black]
+line-length = 120

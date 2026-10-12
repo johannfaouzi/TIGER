@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrr}
+\toprule
+Family & Mean accuracy & Mean balanced accuracy & Data sets won (accuracy) \\
+\midrule
+convolution & 0.8661 & 0.8437 & 75.0000 \\
+interval & 0.8328 & 0.8077 & 21.0000 \\
+shapelet & 0.8577 & 0.8301 & 30.0000 \\
+dictionary & 0.8432 & 0.8148 & 27.0000 \\
+\bottomrule
+\end{tabular}
+\caption{Each representation family's own standalone predictive strength before stacking: TIGER's own three base learners (ridge, extra trees, naive Bayes, all on the deployed ``cv'' out-of-fold arm) combined by a within-family hard majority vote, on the full 142-data-set benchmark (per-data-set means over 30 resamples, averaged across data sets). ``Data sets won'' counts the data sets on which that family's own accuracy is highest among the four (ties counted for every tied family).}
+\label{tab:family-standalone-strength}
+\end{table}

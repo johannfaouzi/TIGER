@@ -1,0 +1,5 @@
+Family,ECE,N pooled test predictions
+convolution,0.0443,4124580
+interval,0.0583,4124580
+shapelet,0.0453,4124580
+dictionary,0.0440,4124580

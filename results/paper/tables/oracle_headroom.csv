@@ -1,0 +1,6 @@
+Method,Mean accuracy,Gap to six-method oracle
+"Best base learner (CV-picked, hindsight)",0.8778,0.0094
+TIGER's adaptive rule (deployed),0.8838,0.0034
+Weighted hard majority vote / TabICLv2 oracle (hindsight),0.8869,0.0003
+Six-method oracle (hindsight),0.8872,0.0000
+"Best single base learner (test-set hindsight, no stacking)",0.8922,-0.0050

@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrrrrr}
+\toprule
+Bin & N data sets & Best base learner (CV, hindsight) & TIGER's adaptive rule (deployed) & 2-method oracle (hindsight) & 6-method oracle (hindsight) & Gap to 6-method oracle \\
+\midrule
+2 (binary) & 50.0000 & 0.9230 & 0.9291 & 0.9305 & 0.9307 & 0.0016 \\
+3-5 & 38.0000 & 0.8807 & 0.8905 & 0.8926 & 0.8930 & 0.0025 \\
+6-10 & 30.0000 & 0.8401 & 0.8478 & 0.8531 & 0.8532 & 0.0054 \\
+11+ & 24.0000 & 0.8264 & 0.8241 & 0.8293 & 0.8297 & 0.0057 \\
+\bottomrule
+\end{tabular}
+\caption{Meta-oracle headroom (as in Table\textasciitilde{}\textbackslash\{\}ref\{tab:oracle-headroom\}'s six-method-oracle row), broken down by the number of classes in the data set (per-data-set means over 30 resamples, averaged within each bin; 142 data sets total).}
+\label{tab:oracle-headroom-by-nclasses}
+\end{table}

@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrr}
+\toprule
+Algorithm & Median (s) & Min (s) & Max (s) \\
+\midrule
+QUANT & 2.0639 & 0.2809 & 65.0623 \\
+KG-MTP & 14.4213 & 1.2215 & 624.2062 \\
+RDST & 19.3069 & 1.0431 & 826.2941 \\
+WEASEL 2.0 & 24.8025 & 1.5662 & 2593.3284 \\
+TIGER & 156.9692 & 20.6543 & 13602.7998 \\
+HC2 & 834.7009 & 55.6283 & 88296.2924 \\
+\bottomrule
+\end{tabular}
+\caption{Train+test wall-clock runtime (seconds) for TIGER and five external algorithms, all measured on the same hardware, over the 142-data-set benchmark: each data set's own resamples are first collapsed to that data set's median runtime, then the median, minimum, and maximum are taken across the 142 per-data-set medians.}
+\label{tab:runtimes}
+\end{table}

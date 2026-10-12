@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrr}
+\toprule
+Algorithm & Extra Trees accuracy & TabICLv2 accuracy & TabICLv2 mean runtime (min) \\
+\midrule
+KG-MTP & 0.794 & 0.815 & 60.182 \\
+QUANT & 0.780 & 0.815 & 59.442 \\
+RDST & 0.797 & 0.832 & 59.927 \\
+WEASEL 2.0 & 0.747 & 0.776 & 60.135 \\
+\bottomrule
+\end{tabular}
+\caption{The discarded ``wide selection'' design: TabICLv2 fit on up to 1\{,\}000 selected raw features per family (group size 100), against a cheap Extra Trees baseline fit on the same features, on the 20-dataset development subset. TabICLv2's own mean wall-clock fit-and-predict time is reported in minutes, per (data set, resample, family) unit.}
+\label{tab:discarded-design-wide-selection}
+\end{table}

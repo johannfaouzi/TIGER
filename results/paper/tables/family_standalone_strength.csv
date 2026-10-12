@@ -1,0 +1,5 @@
+Family,Mean accuracy,Mean balanced accuracy,Data sets won (accuracy)
+convolution,0.8661,0.8437,75
+interval,0.8328,0.8077,21
+shapelet,0.8577,0.8301,30
+dictionary,0.8432,0.8148,27

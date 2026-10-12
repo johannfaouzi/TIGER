@@ -1,0 +1,17 @@
+Method,Mean accuracy,Median accuracy,Std,Mean rank
+"Meta-oracle (test-time, upper bound)",0.8916,0.9468,0.1214,2.6514
+"Oracle (test-time, upper bound)",0.8922,0.9446,0.1213,3.1232
+"Best existing (per-dataset best of 5, hindsight)",0.8880,0.9450,0.1238,4.5775
+Auto-selected (this paper's rule),0.8838,0.9382,0.1241,6.3908
+TabICLv2 (stacked),0.8789,0.9267,0.1301,7.1972
+KG-MTP,0.8763,0.9226,0.1316,8.1690
+CAWPE hard-vote,0.8777,0.9316,0.1247,8.5282
+HC2 (published),0.8758,0.9288,0.1278,8.7641
+Best base learner (CV-picked),0.8778,0.9303,0.1279,8.8345
+Logistic regression (stacked),0.8721,0.9257,0.1367,9.8627
+CAWPE,0.8737,0.9253,0.1281,9.8873
+Hard majority vote,0.8680,0.9159,0.1303,11.1197
+LightGBM (stacked),0.8655,0.9117,0.1382,11.1690
+RDST,0.8629,0.9092,0.1345,11.6796
+WEASEL 2.0,0.8581,0.9133,0.1372,11.8592
+QUANT,0.8552,0.8913,0.1355,12.1866

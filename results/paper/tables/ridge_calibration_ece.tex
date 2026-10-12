@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{lrr}
+\toprule
+Family & ECE & N pooled test predictions \\
+\midrule
+convolution & 0.0443 & 4124580.0000 \\
+interval & 0.0583 & 4124580.0000 \\
+shapelet & 0.0453 & 4124580.0000 \\
+dictionary & 0.0440 & 4124580.0000 \\
+\bottomrule
+\end{tabular}
+\caption{Expected Calibration Error (15 equal-width confidence bins) of the Platt-scaled Ridge meta-features, per representation family, pooled over every test row across the full 142-data-set benchmark (30 resamples each).}
+\label{tab:ridge-calibration-ece}
+\end{table}
